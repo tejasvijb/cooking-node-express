@@ -9,7 +9,7 @@ let app = express();
 console.log("Hello World")
 
 function sendResponse (req, res) {
-    res.send('Hello express');
+    res.send('Hello Express');
 }
 
 app.get('/', sendResponse);
