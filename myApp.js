@@ -15,7 +15,7 @@ function sendResponse (req, res) {
 app.get('/', sendResponse);
 
 
-
+app.use('/public', express.static(__dirname + '/public'));
 
 
 
