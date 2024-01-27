@@ -9,7 +9,7 @@ let app = express();
 console.log("Hello World")
 
 function sendResponse (req, res) {
-    res.send('Hello Express');
+    res.sendFile(__dirname + '/views/index.html');
 }
 
 app.get('/', sendResponse);
