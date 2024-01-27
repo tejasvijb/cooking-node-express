@@ -4,7 +4,12 @@ let app = express();
 
 
 
+function logger (req, res, next) {
+    console.log(`${req.method} ${req.path} - ${req.ip}`);
+    next();
+}
 
+app.use(logger)
 
 
 console.log("Hello World")
